@@ -7,4 +7,10 @@ def home(request):
 
 def logout_view(request):
     logout(request)
-    return redirect('')
+    return redirect('home')
+
+def content(request):
+    return render(request, 'content.html')  # Template de la page Content
+
+def system(request):
+    return render(request, 'system.html')  # Template de la page System
