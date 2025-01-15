@@ -1,16 +1,15 @@
-{% extends "base.html" %}
-{% load socialaccount %}
-
-{% block title %}Welcome{% endblock %}
-
-{% block content %}
-<div class="jumbotron text-center">
-    <h1 class="display-4">Welcome to My Django App</h1>
-    <p class="lead">This is a simple application with Google authentication and a todo list.</p>
-    {% if not user.is_authenticated %}
-    <hr class="my-4">
-    <p>Please login to access the application features.</p>
-        <a class="btn btn-primary btn-lg" href="{% provider_login_url 'google' %}" role="button">Login with Google</a>
-    {% endif %}
-</div>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        Django App
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <h1>Aaaaaaaaaaaaaaa</h1>
+</body>
+</html>
